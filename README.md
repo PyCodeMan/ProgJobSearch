@@ -13,14 +13,16 @@ The system is available on Linux, Termux and any Python interpreters. Before ins
 Download on Linux:
 1. apt update
 2. apt upgrade -y
-3. git clone https://github.com/PyCodeMan/ProgJobSearch/
-4. pip install -r requirements
+3. sudo apt install git
+4. git clone https://github.com/PyCodeMan/ProgJobSearch/
+5. pip install -r requirements
 
 Download on Termux:
 1. pkg update
 2. pkg upgrade -y
-3. git clone https://github.com/PyCodeMan/ProgJobSearch/
-4. pip install -r requirements
+3. pkg install git
+4. git clone https://github.com/PyCodeMan/ProgJobSearch/
+5. pip install -r requirements
 
 # How to use on Windows or Android?
 If you have a Python interpreter on Android or Windows, just copy and paste the program code there. However, do not forget about installing the libraries necessary for the program to work - bs4, time and requests.
