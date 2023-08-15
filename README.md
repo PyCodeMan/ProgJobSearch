@@ -25,4 +25,4 @@ Download on Termux:
 # How to use on Windows or Android?
 If you have a Python interpreter on Android or Windows, just copy and paste the program code there. However, do not forget about installing the libraries necessary for the program to work - bs4, time and requests.
 
-When you are done with the installation, just start the system using the command `python ProgJobSearch` (if it didn't work, `python 3 ProgJobSearch`) and select the necessary parameters. The menu is intuitive and not difficult to interact.
+# When you are done with the installation, just start the system using the command `python ProgJobSearch` (if it didn't work, `python 3 ProgJobSearch`) and select the necessary parameters. The menu is intuitive and not difficult to interact.
