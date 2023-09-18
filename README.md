@@ -14,10 +14,15 @@ Download on Linux:
 2. apt update && apt upgrade -y
 3. apt install python3
 4. apt install pip
+
 4.1. If the fourth command did not work and send you to PEP668 - apt install python3-requests && apt install python3-lxml && apt install python3-bs4 -y
+
 4.2. exit
+
 4.3. git clone https://github.com/PyCodeMan/ProgJobSearch/
+
 4.4. The program is ready to launch, go to the launch instructions
+
 5. exit
 6. git clone https://github.com/PyCodeMan/ProgJobSearch/
 7. cd ProgJobSearch
@@ -30,10 +35,15 @@ Download on Termux:
 3. apt update && apt upgrade -y
 4. apt install python3
 5. apt install pip
+
 5.1. If the fivth command did not work and send you to PEP668 - apt install python3-requests && apt install python3-lxml && apt install python3-bs4 -y
+
 5.2. exit
+
 5.3. git clone https://github.com/PyCodeMan/ProgJobSearch/
+
 5.4. The program is ready to launch, go to the launch instructions
+
 6. exit
 7. git clone https://github.com/PyCodeMan/ProgJobSearch/
 8. cd ProgJobSearch
