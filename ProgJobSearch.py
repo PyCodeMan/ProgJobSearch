@@ -17,10 +17,8 @@ class Burses:
 
     def scrape(self, resp_text, tag, html_cls):
         soup = BeautifulSoup(self.resp_text, "lxml")
-        data = str(soup.find(tag, class_=html_cls))
-        return data.replace('<p class="JobSearchCard-primary-description">', '').replace('</p>',
-        '').replace('</a>', '').replace('<p class="jobRecord__desc" v-pre="">',
-        '').replace('<div class="mb20 text-truncate-wrap">', '').replace('</div>', '').strip()
+        data = soup.find(tag, class_=html_cls).text
+        return data.replace('  ', '')
 
 
 def scraping():
@@ -35,7 +33,7 @@ def scraping():
     guru_data = guru.scrape(guru.resp_text, "p", "jobRecord__desc")
     
     order_texts = f'\n\n\n{freelancer_data} \n\nLink to order: https://www.freelancer.com/jobs/python/\
-    \n\n\n{freelance_data[170:].strip()} \n\nLink to order: https://freelance.ru/project/search/pro?c=&c%5B%5D=4&q=&m=or&e=&a=0&a=1&v=0&f=&t=&o=0&b=\
+    \n\n\n{freelance_data} \n\nLink to order: https://freelance.ru/project/search/pro?c=&c%5B%5D=4&q=&m=or&e=&a=0&a=1&v=0&f=&t=&o=0&b=\
     \n\n\n{guru_data} \n\nLink to order: https://www.guru.com/d/jobs/c/programming-development/ \n\n\n'
     return order_texts
 
@@ -108,7 +106,7 @@ Mail: codebeta@mail.ru
         print("\nProgramm finished...")
     
     else:
-        print("Invalid input")
+        print("\n\nInvalid input\n\n")
         main()
 
 
